@@ -9,22 +9,8 @@ public class 완주하지못한선수 {
         String[] participant = {"mislav", "stanko", "mislav", "ana"};
         String[] completion = {"stanko", "ana", "mislav"};
 
-        ArrayList<tmp> arr = new ArrayList<>();
-        tmp t = new tmp();
-        arr.add(t);
-        for(tmp ar : arr)
-            System.out.println(ar);
-
-        Iterator iter = arr.iterator();
-        while(iter.hasNext()){
-            tmp a = (tmp)iter.next();
-            System.out.println(a.getTmpVal());
-            a.setTmpVal(12);
-            System.out.println(a.getTmpVal());
-        }
-
-        // String result = 완주하지못한선수.solution(participant, completion);
-        // System.out.println(result);
+        String result = 완주하지못한선수.solution(participant, completion);
+        System.out.println(result);
     }
     static String solution(String[] participant, String[] completion){
         String answer = "";
